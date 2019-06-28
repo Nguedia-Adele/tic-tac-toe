@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic tac toe</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="tictactoe.css">
+</head>
+<body>
+	<h1>TIC TAC TOE GAME</h1>
+	<p id="turns">Player 1's turn</p>
+
+	<table id="gameBoard">
+		<tr>
+			<td>
+				<button type="button" id ="G1" onclick="setToken(this.id)"></button>
+			</td>
+			<td>
+				<button type="button" id ="G2" onclick="setToken(this.id)"></button>
+			</td>
+			<td>
+				<button type="button" id ="G3" onclick="setToken(this.id)"></button>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<button type="button" id ="G4" onclick="setToken(this.id)"></button>
+			</td>
+			<td>
+				<button type="button" id ="G5" onclick="setToken(this.id)"></button>
+			</td>
+			<td>
+				<button type="button" id ="G6" onclick="setToken(this.id)"></button>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<button type="button" id ="G7" onclick="setToken(this.id)"></button>
+			</td>
+			<td>
+				<button type="button" id ="G8" onclick="setToken(this.id)"></button>
+			</td>
+			<td>
+				<button type="button" id ="G9" onclick="setToken(this.id)"></button>
+			</td>
+		</tr>
+	</table>
+
+	<p id ="outcome"> </p>
+
+	<button id="reset" onclick="reset()">PLAY AGAIN</button>
+	
+	<table>
+		<th colspan="3">GAME STATISTICS</th>
+		<tr>
+			<td>Player 1</td>
+			<td>Draws</td>
+			<td>Player 2</td>
+		</tr>
+
+		<tr>
+			<td id="score1"></td>
+			<td id="draws"></td>
+			<td id="score2"></td>
+		</tr>
+	</table>
+
+	<script src="tictactoe.js"></script>
+	<script src="tictacmachine.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+table{
+	background-color: white;
+	text-align: center;
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 25px;
+}
+
+td,th{
+	height: 90px;
+	width: 90px;
+	border: 1px solid black;
+}
+
+button{
+	height: 90px;
+	width: 90px;
+}
+
+#reset{
+	height: 45px;
+	width: 90px;
+	margin-left: 115px;
+}
